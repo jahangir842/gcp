@@ -1,3 +1,11 @@
+provider "google" {
+  project = "top-alliance-440518-q4"
+  region  = "us-west1"
+  zone    = "us-west1-a"
+}
+
+
+
 resource "google_compute_network" "vpc_network" {
   name                    = "my-custom-mode-network"
   auto_create_subnetworks = false
